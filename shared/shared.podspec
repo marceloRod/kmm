@@ -1,14 +1,16 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'shared'
     spec.version                  = '1.0'
-    spec.homepage                 = 'Link to the Shared Module homepage'
-    spec.source                   = { :http=> ''}
+    spec.homepage                 = 'https://github.com/marceloRod/kmm'
+    spec.source = { :git => 'https://github.com/marceloRod/kmm.git' }
     spec.authors                  = ''
     spec.license                  = ''
     spec.summary                  = 'Some description for the Shared Module'
     spec.vendored_frameworks      = 'build/cocoapods/framework/shared.framework'
     spec.libraries                = 'c++'
     spec.ios.deployment_target = '15.0'
+    spec.license                  = { :type => 'MIT', :file => 'LICENSE' } # Example license type (MIT)
+
                 
                 
 
