@@ -2,6 +2,15 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
+    id("io.github.luca992.multiplatform-swiftpackage") version "2.2.2"
+}
+
+multiplatformSwiftPackage {
+    packageName("PeopleInSpace")
+    swiftToolsVersion("5.3")
+    targetPlatforms {
+        iOS { v("13") }
+    }
 }
 
 kotlin {
